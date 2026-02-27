@@ -14,11 +14,16 @@ A lightweight Google Forms–like application built with Django. Create forms, c
 - **View responses** in a simple table view
 - **No authentication required** for form submission (ideal for surveys and feedback)
 
+## Requirements
+
+- Python 3.10+ (3.12+ recommended)
+- Django 6.x
+
 ## Setup
 
 1. Create a virtual environment (recommended):
    ```bash
-   python -m venv venv
+   py -3 -m venv venv
    venv\Scripts\activate   # Windows
    ```
 
@@ -29,17 +34,17 @@ A lightweight Google Forms–like application built with Django. Create forms, c
 
 3. Run migrations:
    ```bash
-   python manage.py migrate
+   py -3 manage.py migrate
    ```
 
 4. Create a superuser for the admin:
    ```bash
-   python manage.py createsuperuser
+   py -3 manage.py createsuperuser
    ```
 
 5. Start the development server:
    ```bash
-   python manage.py runserver
+   py -3 manage.py runserver
    ```
 
 6. Open http://127.0.0.1:8000/ in your browser.
